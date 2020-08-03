@@ -1,0 +1,49 @@
+---
+title: Links and Hyperlinks
+author: Migliari, W. (2020)
+date: August, 2020
+output: html_document
+
+---
+\
+\
+```{r setup, echo = FALSE}
+
+
+library(shiny)
+library(leaflet)
+
+```
+\
+\
+```{r, echo = FALSE, fig.dim= "20%"}
+
+library(htmltools)
+
+a(href = 'testcf.pdf', icon("file-pdf", "fa-3x")) 
+
+a(href = 'corona_statistik_sverige_official.xlsx', icon("file-excel", "fa-3x"))
+
+```
+
+
+```{r, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+
+```
+
+Repository [<i class="fab fa-r-project fa-2x" style="color:lightblue;"></i>](https://rpubs.com/wemigliari) 
+Carbon Footprints  [<i class="far fa-file-pdf fa-2x" style="color:red;"></i>](testcf.pdf)
+Excel table  [<i class="fas fa-file-excel fa-2x" style="color:green;"></i>](corona_statistik_sverige_official.xlsx)
+
+
+<div style="font-size: 24px;">
+  <i class="fas fa-camera fa-xs"></i> 
+  <i class="fas fa-camera fa-sm"></i>
+  <i class="fas fa-camera fa-lg"></i>
+  <i class="fas fa-camera fa-2x"></i>
+  <i class="fas fa-camera fa-3x"></i>
+  <i class="fas fa-camera fa-5x"></i>
+  <i class="fas fa-camera fa-7x"></i>
+  <i class="fas fa-camera fa-10x"></i>
+</div>
